@@ -1,8 +1,9 @@
 {
-    "orgName": "ccoenraets Company",
+    "orgName": "Northern Trail Outfitters",
     "edition": "Developer",
     "hasSampleData": "false",
-    "orgPreferences" : {
-        "enabled": ["S1DesktopEnabled"]
+    "orgPreferences": {
+        "enabled": ["S1DesktopEnabled"],
+        "disabled": ["S1EncryptedStoragePref2"]
     }
 }
