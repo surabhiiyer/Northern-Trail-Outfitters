@@ -62,7 +62,7 @@
                 </div>
                 <aura:set attribute="else">
                     <div>
-                        <lightning:datatable data="{!v.mixItems}" columns="{!v.columns}" onrowselection="{!c.getSelectedName}" />
+                        <lightning:datatable keyField="id" data="{!v.mixItems}" columns="{!v.columns}" onrowselection="{!c.getSelectedName}" />
                     </div>
                 </aura:set>
             </aura:if>
