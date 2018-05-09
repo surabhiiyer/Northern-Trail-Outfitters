@@ -2,7 +2,7 @@
 	keyupHandler : function(component, event) {
         var changeEvent = component.getEvent("onchange");
         changeEvent.setParams({
-            "value": event.target.value
+            "value": event.getSource().get("v.value")
         });
         changeEvent.fire();
 	},
