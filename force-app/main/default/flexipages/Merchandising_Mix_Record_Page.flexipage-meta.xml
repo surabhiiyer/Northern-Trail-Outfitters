@@ -18,10 +18,6 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <componentInstances>
-            <componentInstanceProperties>
-                <name>pathName</name>
-                <value>Merchandising Mix</value>
-            </componentInstanceProperties>
             <componentName>MixPath</componentName>
         </componentInstances>
         <componentInstances>

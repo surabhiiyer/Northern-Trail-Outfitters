@@ -4,7 +4,7 @@
         <name>utilityItems</name>
         <type>Region</type>
     </flexiPageRegions>
-    <masterLabel>Northern Trail UtilityBar</masterLabel>
+    <masterLabel>Northern Trail Outfitters UtilityBar</masterLabel>
     <template>
         <name>one:utilityBarTemplateDesktop</name>
     </template>
