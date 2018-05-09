@@ -2,7 +2,10 @@
     "packageDirectories": [
         {
             "path": "force-app",
-            "default": true
+            "default": true,
+            "id": "0Ho1I000000XZBySAO",
+            "versionNumber": "1.0.0.NEXT",
+            "versionName": "Spring '18"
         }
     ],
     "namespace": "",
