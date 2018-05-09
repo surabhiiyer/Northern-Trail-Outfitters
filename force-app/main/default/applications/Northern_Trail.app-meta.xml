@@ -9,16 +9,16 @@
     <formFactors>Large</formFactors>
     <label>Northern Trail</label>
     <navType>Standard</navType>
-    <tab>standard-home</tab>
-    <tab>standard-Account</tab>
-    <tab>standard-Contact</tab>
-    <tab>Merchandise__c</tab>
-    <tab>Merchandising_Mix__c</tab>
-    <tab>Einstein_Playground</tab>
-    <tab>Einstein_Dashboard</tab>
-    <tab>standard-File</tab>
-    <tab>standard-Opportunity</tab>
-    <tab>standard-Event</tab>
+    <tabs>standard-home</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>Merchandise__c</tabs>
+    <tabs>Merchandising_Mix__c</tabs>
+    <tabs>Einstein_Playground</tabs>
+    <tabs>Einstein_Dashboard</tabs>
+    <tabs>standard-File</tabs>
+    <tabs>standard-Opportunity</tabs>
+    <tabs>standard-Event</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Northern_Trail_UtilityBar</utilityBar>
 </CustomApplication>
