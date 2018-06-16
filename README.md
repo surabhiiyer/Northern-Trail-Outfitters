@@ -16,8 +16,6 @@ Read [this blog post](https://developer.salesforce.com/blogs/developer-relations
 *   [Code Highlights](#code-highlights)
 *   [Additional Resources](#additional-resources)
 
-## Features
-
 ## Installation
 
 There are two ways to install Northern Trail Outfitters:
