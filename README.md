@@ -2,7 +2,7 @@
 
 [![CircleCI](https://circleci.com/gh/trailheadapps/northern-trail-outfitters.svg?style=svg)](https://circleci.com/gh/trailheadapps/northern-trail-outfitters)
 
-Northern Trail Outfitters is a fictional outdoor clothing company. It helps with creation and management of merchandise mixes with retailers. A merchandise mix is a collection of products a retailer carries for a season. These merchandise mixes are then submitted to the manufacturing division of the company to let them know how many of each product to produce.
+Northern Trail Outfitters (NTO) is a fictional outdoor clothing company. This application helps NTO merchandisers create “merchandise mixes” for their large retailers . A merchandise mix is a collection of products a retailer carries for a season. Merchandise mixes are submitted to a Heroku-hosted sample manufacturing app using Platform Events. Regardless of the industry you work in, this app demonstrates how to build applications with Lightning Components and how to use Platform Events to integrate with external systems.
 
 [![Thumbnail](http://img.youtube.com/vi/mdjDoDaKBEc/0.jpg)](https://www.youtube.com/watch?v=mdjDoDaKBEc)
 
@@ -120,19 +120,18 @@ This is the recommended option for non developers. Use this option if you want t
 
 ### Caching data with storable actions
 
-Storable actions make it easy to implement client-side data caching, which is one of the most impactful things you can do to improve the performance of your Lightning components. Check out the FundTileList component. A storable action is used to retrieve funds from the server and cache the response at the client-side. Read [this blog post](https://developer.salesforce.com/blogs/developer-relations/2017/03/lightning-components-best-practices-caching-data-storable-actions.html) for more information.
+Storable actions make it easy to implement client-side data caching, which is one of the most impactful things you can do to improve the performance of your Lightning components. Check out [MerchandiseListHelper](https://github.com/trailheadapps/northern-trail-outfitters/blob/master/force-app/main/default/aura/MerchandiseList/MerchandiseListHelper.js) and [MerchandiseMixHelper](https://github.com/trailheadapps/northern-trail-outfitters/blob/master/force-app/main/default/aura/MerchandiseMix/MerchandiseMixHelper.js). A storable action is used to retrieve funds from the server and cache the response at the client-side. Read [this blog post](https://developer.salesforce.com/blogs/developer-relations/2017/03/lightning-components-best-practices-caching-data-storable-actions.html) for more information.
 
 ### Caching data with a custom cache
 
-In addition to storable actions, you can also build your own custom cache solution. For example, for data that never (or rarely) changes, you can build a custom cache that retrieves the data from the server once, caches the response, and never goes back to the server. Check out the [DataCache](force-app/main/default/staticresources/DataCache.js) static resource for an example. And then check out the SectorSelector and AssetClassSelector components to see how it’s used to cache the list of sectors and asset classes. Read the [Modularizing Code in Lightning Components blog post](https://developer.salesforce.com/blogs/developer-relations/2016/12/lightning-components-code-sharing.html) for more details, and for different strategies to implement a custom cache.
+In addition to storable actions, you can also build your own custom cache solution. For example, for data that never (or rarely) changes, you can build a custom cache that retrieves the data from the server once, caches the response, and never goes back to the server. Check out the [DataCache](force-app/main/default/staticresources/DataCache.js) static resource for an example. And then check out the [CategorySelector](https://github.com/trailheadapps/northern-trail-outfitters/tree/master/force-app/main/default/aura/CategorySelector) component to see how it’s used to cache the list of categories. Read the [Modularizing Code in Lightning Components blog post](https://developer.salesforce.com/blogs/developer-relations/2016/12/lightning-components-code-sharing.html) for more details, and for different strategies to implement a custom cache.
 
 ### Using Base Lightning Components
 
-Custom user interfaces are built by leveraging Base Lightning Components, like [lightning:path](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/aura_compref_lightning_path.htm) and [Lightning Data Service](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/aura_compref_force_recordData.htm). This simplifies the development experience as validations, CSS-styling and and data handling are automatically handled by the platform. See the Lightning component [MixPath](force-app/main/default/aura/MixPath) for details on that.
+Custom user interfaces are built by leveraging Base Lightning Components like [lightning:path](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/aura_compref_lightning_path.htm). This simplifies the development experience as validations, CSS-styling and and data handling are automatically handled by the platform. See the [MixPath](force-app/main/default/aura/MixPath) component for an example.
 
 ### Third-party JavaScript libraries and standard HTML5 interactions
-
-The [MerchandiseMix](force-app/main/default/aura/MerchandiseMix) component shows how a third-party library like [countUp.js](https://github.com/inorganik/countUp.js/) can be used within Lightning Experience. The same component also contains an example how to use standard HTML5 functionality like [drag&drop](https://www.w3schools.com/html/html5_draganddrop.asp) within a Lightning component.
+The [MixChart](https://github.com/trailheadapps/northern-trail-outfitters/blob/master/force-app/main/default/aura/MixChart) component shows how a third-party library like [ChartJS](https://www.chartjs.org/) can be used within Lightning Experience. The [MerchandiseMix](force-app/main/default/aura/MerchandiseMix) component provides another example and uses the [countUp.js](https://github.com/inorganik/countUp.js/) library. MerchandiseMix also shows how to use standard HTML 5 functionality like [drag & drop](https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API).
 
 ## Additional Resources
 
