@@ -4,9 +4,12 @@
         <headerColor>#027FB3</headerColor>
         <logo>nto_logo</logo>
         <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
     </brand>
     <description>Connecting to our customers in a whole new way</description>
     <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <label>Northern Trail Outfitters</label>
     <navType>Standard</navType>
     <tabs>standard-home</tabs>
@@ -14,9 +17,7 @@
     <tabs>standard-Contact</tabs>
     <tabs>Merchandise__c</tabs>
     <tabs>Merchandising_Mix__c</tabs>
-    <tabs>Einstein_Playground</tabs>
-    <tabs>Einstein_Dashboard</tabs>
-    <tabs>standard-File</tabs>
+    <tabs>Einstein_Twitter_Feed</tabs>
     <tabs>standard-Opportunity</tabs>
     <tabs>standard-Event</tabs>
     <uiType>Lightning</uiType>

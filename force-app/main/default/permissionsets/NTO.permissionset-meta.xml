@@ -88,11 +88,7 @@
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <tabSettings>
-        <tab>Einstein_Dashboard</tab>
-        <visibility>Visible</visibility>
-    </tabSettings>
-    <tabSettings>
-        <tab>Einstein_Playground</tab>
+        <tab>Einstein_Twitter_Feed</tab>
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
