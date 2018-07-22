@@ -1,3 +1,0 @@
-<design:component >
-    <design:attribute name="filterName" datasource="MSRP" label="Filter" default="MSRP"/>
-</design:component>

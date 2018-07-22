@@ -11,6 +11,8 @@
                       mode="EDIT"
                       recordUpdated="{!c.onRecordUpdated}" />
 
+    <c:Subscriber channel="/topic/MixStatusChange" onMessage="{!c.messageHandler}"/>
+
     <lightning:path aura:id="path" recordId="{!v.recordId}"
         variant="{!v.variant}"
         hideUpdateButton="{!v.hideUpdateButton}"

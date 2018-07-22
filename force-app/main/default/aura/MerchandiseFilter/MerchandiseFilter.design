@@ -1,5 +1,0 @@
-<design:component label="Merchandise Filter">
-    <design:attribute name="showNameFilter" label="Name" default="false"/>
-    <design:attribute name="showCategoryFilter" label="Category" default="false"/>
-    <design:attribute name="showPriceFilter" label="Price" default="false"/>
-</design:component>

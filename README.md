@@ -136,3 +136,15 @@ The [MixChart](https://github.com/trailheadapps/northern-trail-outfitters/blob/m
 ## Additional Resources
 
 Install the [Northern Trail Outfitters Manufacturing](https://github.com/trailheadapps/northern-trail-manufacturing) app to experiment with platform event-based integration.
+
+When you create a Merchandise Mix in Salesforce and change its status to **Submitted to Manufacturing**, the **Mix Status Change** process automatically publishes the **Mix_Submitted__e** platform event. The manufacturing app is listening for that event and automatically adds the merchandise mix to the mix list when a **Mix_Submitted__e** event comes in.
+
+When you click the **Approve** button next to a merchandise mix in the manufacturing app, the manufacturing app publishes a **Mix_Approved__e** event. The **Mix Status Change** process (in Process Builder) listens for that event and automatically changes the bundle status to **Approved by Manufacturing** when an event comes in. If a user is looking at the record details page for that mix, the status will automatically change (no page refresh required) because the status path component is using the Streaming API to listen for status changes. For this last part to work, you need to execute the following Salesforce DX command to create the Streaming API topic:
+
+```
+sfdx force:apex:execute -f ./apex/createPushTopic.apex
+```
+
+Take a look at the `createPushTopic.apex` file in the `/apex` folder to examine the push topic creation logic.
+
+Note that you could also have listened directly for the platform event in the status path component and update the status to **Approved by Manufacturing** in the UI when the event comes in. However, that approach could lead to inconsistencies in case the server-side status update (handled by the **Mix Status Change** process) fails, because a validation rule is not met for example. In that case the UI would show the status as **Approved by Manufacturing**, while the status in the database would still be **Submitted to Manufacturing**. 

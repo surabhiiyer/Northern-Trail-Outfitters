@@ -1,5 +1,10 @@
 trigger onMixApproved on Mix_Approved__e (after insert) {
 
+    // This commented out trigger shows how to listen to a Platform Event programatically.
+    // You can also listen to a Platform Event declaratively using a Process Builder process.
+    // See the "Mix Approved" Process for an example.
+
+    /*
     List<Merchandising_Mix__c> mixes = new List<Merchandising_Mix__c>();
     
     for (Mix_Approved__e event : Trigger.New) {
@@ -11,5 +16,6 @@ trigger onMixApproved on Mix_Approved__e (after insert) {
     }
 
 	update mixes;
+    */
     
 }
