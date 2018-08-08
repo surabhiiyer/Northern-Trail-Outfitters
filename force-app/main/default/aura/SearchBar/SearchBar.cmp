@@ -2,6 +2,6 @@
 
     <aura:registerEvent name="onchange" type="c:ValueChange" />
 
-    <lightning:input type="text" aura:id="searchKey" onchange="{!c.keyupHandler}" />
+    <lightning:input type="text" aura:id="searchKey" placeholder="Search..." onchange="{!c.keyupHandler}" />
 
 </aura:component>

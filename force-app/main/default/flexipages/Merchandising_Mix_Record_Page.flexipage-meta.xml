@@ -23,6 +23,10 @@
         <componentInstances>
             <componentName>force:detailPanel</componentName>
         </componentInstances>
+        <name>Facet-e1e4ec39-58dc-4f4b-b4ec-a5491a0a1aa4</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
         <componentInstances>
             <componentInstanceProperties>
                 <name>isTileView</name>
@@ -34,33 +38,52 @@
             </componentInstanceProperties>
             <componentName>MerchandiseMix</componentName>
         </componentInstances>
+        <name>Facet-4f5ca0d7-db3d-487d-bdbc-2e8ac6add92c</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>body</name>
+                <value>Facet-e1e4ec39-58dc-4f4b-b4ec-a5491a0a1aa4</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>Standard.Tab.detail</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:tab</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>active</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>body</name>
+                <value>Facet-4f5ca0d7-db3d-487d-bdbc-2e8ac6add92c</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>Mix</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:tab</componentName>
+        </componentInstances>
+        <name>Facet-69a0a7d5-d04c-42bd-8569-2d9da7b14154</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>tabs</name>
+                <value>Facet-69a0a7d5-d04c-42bd-8569-2d9da7b14154</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:tabset</componentName>
+        </componentInstances>
         <mode>Replace</mode>
         <name>main</name>
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <componentInstances>
-            <componentInstanceProperties>
-                <name>showCategoryFilter</name>
-                <value>true</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>showNameFilter</name>
-                <value>true</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>showPriceFilter</name>
-                <value>true</value>
-            </componentInstanceProperties>
-            <componentName>MerchandiseFilter</componentName>
-            <visibilityRule>
-                <criteria>
-                    <leftValue>{!Record.Status__c}</leftValue>
-                    <operator>EQUAL</operator>
-                    <rightValue>Draft</rightValue>
-                </criteria>
-            </visibilityRule>
-        </componentInstances>
         <componentInstances>
             <componentInstanceProperties>
                 <name>pageSize</name>
