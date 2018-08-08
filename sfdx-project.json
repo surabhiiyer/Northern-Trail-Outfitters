@@ -3,12 +3,15 @@
         {
             "path": "force-app",
             "default": true,
-            "id": "0Ho1I000000XZBySAO",
+            "package": "nto",
             "versionNumber": "1.0.0.NEXT",
-            "versionName": "Spring '18"
+            "versionName": "Summer '18"
         }
     ],
     "namespace": "",
     "sfdcLoginUrl": "https://login.salesforce.com",
-    "sourceApiVersion": "43.0"
+    "sourceApiVersion": "43.0",
+    "packageAliases": {
+        "nto": "0Ho1I000000XZBySAO"
+    }
 }
