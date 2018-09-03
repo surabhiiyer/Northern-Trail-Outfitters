@@ -13,7 +13,13 @@
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
 
     <div>
-        <lightning:layout class="header">
+
+        <lightning:buttonGroup class="slds-m-bottom_small">
+            <lightning:buttonIcon iconName="utility:apps" onclick="{!c.toggleListMode}" />
+            <lightning:buttonIcon iconName="utility:table" onclick="{!c.toggleListMode}" />
+        </lightning:buttonGroup>
+        
+        <lightning:layout class="header slds-m-bottom_small">
             <lightning:layoutitem class="slds-p-right_medium">
                 <lightning:icon iconName="custom:custom17" />
             </lightning:layoutitem>
@@ -41,11 +47,6 @@
                 </lightning:layout>
             </lightning:layoutitem>
         </lightning:layout>
-
-        <lightning:buttonGroup class="slds-m-bottom_small">
-            <lightning:buttonIcon iconName="utility:apps" onclick="{!c.toggleListMode}" />
-            <lightning:buttonIcon iconName="utility:table" onclick="{!c.toggleListMode}" />
-        </lightning:buttonGroup>
 
         <div aura:id="dropZone" class="drop-zone" ondrop="{!c.dropHandler}" ondragover="{!c.dragOverHandler}" ondragleave="{!c.dragLeaveHandler}">
 

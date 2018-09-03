@@ -9,14 +9,18 @@
     <aura:attribute name="total" type="Integer"/>
     
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
-    <aura:handler event="c:MerchandiseFilterChange" action="{!c.filterChangeHandler}"/>
     
     <lightning:card title="{! 'Merchandise List (' + v.total + ')'}" iconName="standard:product">
-        
+
         <aura:set attribute="actions">
-                <c:Paginator page="{!v.page}" pages="{!v.pages}" total="{!v.total}" label="products"
+            <c:Paginator page="{!v.page}" pages="{!v.pages}" total="{!v.total}" label="products"
                 previousPage="{!c.onPreviousPage}" nextPage="{!c.onNextPage}"/>
         </aura:set>
+
+        <div class="slds-p-horizontal_small slds-p-bottom_x-small">
+            <c:SearchBar onchange="{!c.searchKeyChangeHandler}" />
+            <c:CategorySelector onchange="{!c.categoryChangeHandler}" />
+        </div>
 
         <aura:iteration items="{!v.items}" var="item" indexVar="index">
 		    <lightning:layoutitem size="12">
