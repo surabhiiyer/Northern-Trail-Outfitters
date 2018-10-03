@@ -10,7 +10,7 @@
     ],
     "namespace": "",
     "sfdcLoginUrl": "https://login.salesforce.com",
-    "sourceApiVersion": "43.0",
+    "sourceApiVersion": "44.0",
     "packageAliases": {
         "nto": "0Ho1I000000XZBySAO",
         "nto@2.0.0-2": "04t1I0000036se1QAA"
