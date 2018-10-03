@@ -23,7 +23,6 @@
             if (message && message.data && message.data.sobject) {
                 var mixId = message.data.sobject.Id;
                 var status = message.data.sobject.Status__c;
-                console.log(status);
                 if (mixId === mix.Id && status !== mix.Status__c) {
                     component.find("mixRecord").reloadRecord(true);
                 }

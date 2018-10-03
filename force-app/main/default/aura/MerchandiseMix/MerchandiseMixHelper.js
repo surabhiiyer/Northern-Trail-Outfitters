@@ -62,7 +62,6 @@
         });
         action.setCallback(this, function (response) {
             var result = response.getReturnValue();
-            console.log(result);
             var mixItems = component.get("v.mixItems");
             for (var i = 0; i < mixItems.length; i++) {
                 if (mixItems[i].id === mixItem.id) {
