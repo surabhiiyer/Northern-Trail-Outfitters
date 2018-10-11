@@ -1,6 +1,6 @@
 global with sharing class MerchandiseMixController {
 
-    @AuraEnabled
+    @AuraEnabled(cacheable=true)
     public static List<Mix_Item__c> getMixItems(Id mixId) {
         return [SELECT Id, Merchandise__r.Name, Merchandise__r.Price__c, Merchandise__r.Category__c, Merchandise__r.Picture_URL__c, Qty__c 
                 FROM Mix_Item__c

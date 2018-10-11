@@ -1,7 +1,6 @@
 ({
     loadMixItems: function (component, mixId) {
         var action = component.get("c.getMixItems");
-        action.setStorable();
         action.setParams({
             "mixId": mixId
         });

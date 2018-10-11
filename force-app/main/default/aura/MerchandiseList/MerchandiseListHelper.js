@@ -1,7 +1,6 @@
 ({
 	loadMerchandise : function(component, page) {
         var action = component.get("c.getMerchandise");
-        action.setStorable();
 		var pageSize = component.get("v.pageSize");
 		action.setParams({
       		"filters": JSON.stringify(component.get("v.filterObject")),
