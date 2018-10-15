@@ -83,7 +83,7 @@ This is the recommended option for non developers. Use this option if you want t
 
 1.  Enable My Domain. Follow the instructions to enable My Domain [here](https://trailhead.salesforce.com/modules/identity_login/units/identity_login_my_domain).
 
-1.  Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1I0000036tXWQAY) to install the Northern Trail Outfitters unlocked package into your developer edition org.
+1.  Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1I0000036tYKQAY) to install the Northern Trail Outfitters unlocked package into your developer edition org.
 
 1.  Select **Install for All Users**. When prompted, make sure you grant access to the external sites (api.einstein.ai).
 
