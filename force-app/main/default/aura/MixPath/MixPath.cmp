@@ -3,6 +3,7 @@
     <aura:attribute name="variant" type="String" default="non-linear"/>
     <aura:attribute name="hideUpdateButton" type="Boolean" default="true"/>
     <aura:attribute name="record" type="Object" />
+    <aura:attribute name="channel" type="String" default="/topic/MixStatusChange" />
 
     <force:recordData aura:id="mixRecord"
                       recordId="{!v.recordId}"
@@ -11,7 +12,9 @@
                       mode="EDIT"
                       recordUpdated="{!c.onRecordUpdated}" />
 
-    <c:Subscriber channel="/topic/MixStatusChange" onMessage="{!c.messageHandler}"/>
+    <lightning:empApi aura:id="empApi" /> 
+
+    <aura:handler name="init" value="{!this}" action="{!c.subscribe}" />
 
     <lightning:path aura:id="path" recordId="{!v.recordId}"
         variant="{!v.variant}"

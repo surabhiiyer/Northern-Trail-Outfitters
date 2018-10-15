@@ -81,9 +81,9 @@ This is the recommended option for non developers. Use this option if you want t
 
 1.  [Sign up](https://developer.salesforce.com/signup) for a developer edition.
 
-1.  Enable My Domain. Follow the instructions to enable My Domain [here](https://trailhead.salesforce.com/projects/quickstart-lightning-components/steps/quickstart-lightning-components1).
+1.  Enable My Domain. Follow the instructions to enable My Domain [here](https://trailhead.salesforce.com/modules/identity_login/units/identity_login_my_domain).
 
-1.  Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1I0000036se1QAA) to install the Northern Trail Outfitters unlocked package into your developer edition org.
+1.  Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1I0000036tXWQAY) to install the Northern Trail Outfitters unlocked package into your developer edition org.
 
 1.  Select **Install for All Users**. When prompted, make sure you grant access to the external sites (api.einstein.ai).
 
@@ -147,4 +147,4 @@ sfdx force:apex:execute -f ./apex/createPushTopic.apex
 
 Take a look at the `createPushTopic.apex` file in the `/apex` folder to examine the push topic creation logic.
 
-Note that you could also have listened directly for the platform event in the status path component and update the status to **Approved by Manufacturing** in the UI when the event comes in. However, that approach could lead to inconsistencies in case the server-side status update (handled by the **Mix Status Change** process) fails, because a validation rule is not met for example. In that case the UI would show the status as **Approved by Manufacturing**, while the status in the database would still be **Submitted to Manufacturing**. 
+Note that you could also have listened directly for the platform event in the status path component and update the status to **Approved by Manufacturing** in the UI when the event comes in. However, that approach could lead to inconsistencies in case the server-side status update (handled by the **Mix Status Change** process) fails, because a validation rule is not met for example. In that case the UI would show the status as **Approved by Manufacturing**, while the status in the database would still be **Submitted to Manufacturing**.
